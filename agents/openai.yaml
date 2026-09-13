@@ -1,0 +1,6 @@
+interface:
+  display_name: "行政公文标准排版"
+  short_description: "按公文规范排版稿件并按语义插入16:9图片"
+  default_prompt: "使用 $official-document-standardizer 将这份稿件和图片整理成标准公文格式，保留原文件名和格式。"
+policy:
+  allow_implicit_invocation: true
