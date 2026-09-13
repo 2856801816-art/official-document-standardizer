@@ -11,7 +11,7 @@ description: 将中文稿件及配图整理为规范行政公文版式，按图�
 
 - 开始排版前读取 [references/format-spec.md](references/format-spec.md)。
 - 有图片时读取 [references/image-placement.md](references/image-placement.md)，逐图识别内容并形成插图计划。
-- 本仓库不分发商业或系统字体。优先使用用户已合法安装的“仿宋_GB2312/仿宋”；缺少字体时说明情况并让用户提供合法字体文件或授权安装。
+- 随 skill 附带 `assets/仿宋_GB2312.TTF`（字体内部名称 `FangSong_GB2312`）。排版或渲染环境缺少该字体时，优先使用此资源；需要安装到操作系统时，先取得用户授权。方正小标宋等其他字体仍须使用系统已有或用户合法提供的版本。
 
 ## 工作流程
 

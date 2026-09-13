@@ -8,3 +8,4 @@ outputs/
 *.docx
 *.ttf
 *.otf
+!assets/仿宋_GB2312.TTF
