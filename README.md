@@ -33,16 +33,23 @@ git clone https://github.com/2856801816-art/official-document-standardizer.git "
 
 ### 豆包 Work 安装
 
-无需前往其他平台，直接在豆包的 **Work** 模式中安装：
+无需前往其他平台。首次使用时打开豆包的 **工作（Work）** 模式，把下面这条命令直接发给它执行：
 
-1. 下载 [最新 Skill 压缩包](https://github.com/2856801816-art/official-document-standardizer/releases/latest/download/official-document-standardizer.zip)，不要自行解压或重新压缩。
-2. 打开豆包并切换到 **工作（Work）**。
-3. 点击输入框下方的 **技能**，进入技能管理或添加技能界面。
-4. 选择创建、导入或上传本地技能，并上传刚下载的 `official-document-standardizer.zip`。
-5. 安装完成后，在当前工作中选择该技能，再添加需要处理的 Word 稿件和照片。
-6. 输入“按标准公文格式处理，保持原文件名和格式”，即可开始处理。
+```powershell
+git clone https://github.com/2856801816-art/official-document-standardizer.git "$env:CODEX_HOME\skills\official-document-standardizer"
+```
 
-如果界面名称因版本不同略有变化，以 **工作 → 技能 → 导入/上传技能** 这条路径为准。发布包已经保留豆包 Skill 所需的单一同名根目录和根目录 `SKILL.md`，可直接上传。
+安装完成后，上传需要处理的 Word 稿件和照片，然后输入：
+
+```text
+使用 official-document-standardizer 技能处理这些材料，按标准公文格式排版，保持原文件名和格式。
+```
+
+豆包 Work 会读取技能要求并处理稿件。以后再次使用时，无需重复下载，只需选择该技能并上传新材料。
+
+#### ZIP 备用安装方法
+
+如果当前环境不能执行 `git clone`，可以下载 [最新 Skill 压缩包](https://github.com/2856801816-art/official-document-standardizer/releases/latest/download/official-document-standardizer.zip)，然后通过 **工作 → 技能 → 导入/上传技能** 安装。ZIP 不需要解压或重新压缩。
 
 ## 使用方法
 
