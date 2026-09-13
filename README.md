@@ -31,26 +31,18 @@ git clone https://github.com/2856801816-art/official-document-standardizer.git "
 
 重新打开 Codex 后，使用 `$official-document-standardizer` 调用。
 
-### 豆包生态安装
+### 豆包 Work 安装
 
-普通豆包客户端目前不一定提供任意本地 Skill 压缩包的导入入口。经官方文档确认，可在火山引擎的 AgentKit 或 ArkClaw 中安装：
+无需前往其他平台，直接在豆包的 **Work** 模式中安装：
 
-#### AgentKit
+1. 下载 [最新 Skill 压缩包](https://github.com/2856801816-art/official-document-standardizer/releases/latest/download/official-document-standardizer.zip)，不要自行解压或重新压缩。
+2. 打开豆包并切换到 **工作（Work）**。
+3. 点击输入框下方的 **技能**，进入技能管理或添加技能界面。
+4. 选择创建、导入或上传本地技能，并上传刚下载的 `official-document-standardizer.zip`。
+5. 安装完成后，在当前工作中选择该技能，再添加需要处理的 Word 稿件和照片。
+6. 输入“按标准公文格式处理，保持原文件名和格式”，即可开始处理。
 
-1. 下载 [最新 Skill 压缩包](https://github.com/2856801816-art/official-document-standardizer/releases/latest/download/official-document-standardizer.zip)。
-2. 登录火山引擎控制台，进入 **AgentKit → Skills 中心 → Skill → 自定义**。
-3. 创建或更新 Skill，上传刚下载的 ZIP 代码包。
-4. 保存并发布到 Skills 空间，然后在智能体中启用。
-
-官方要求：ZIP 解压后的根目录只能有一个 `official-document-standardizer` 文件夹，且 `SKILL.md` 位于该文件夹根目录。本项目的 Release 压缩包已按此结构制作。参见 [AgentKit 更新 Skill 文档](https://www.volcengine.com/docs/86681/2205064)。
-
-#### ArkClaw
-
-1. 下载同一个 [最新 Skill 压缩包](https://github.com/2856801816-art/official-document-standardizer/releases/latest/download/official-document-standardizer.zip)。
-2. 在 ArkClaw 创建或管理 Agent，选择 **上传技能**。
-3. 上传 ZIP，应用后测试并完成配置。
-
-ArkClaw 官方说明本地 ZIP 上限为 10 MB，并采用相同的单一根目录结构。参见 [ArkClaw 技能文档](https://www.volcengine.com/docs/87732/2459781)。
+如果界面名称因版本不同略有变化，以 **工作 → 技能 → 导入/上传技能** 这条路径为准。发布包已经保留豆包 Skill 所需的单一同名根目录和根目录 `SKILL.md`，可直接上传。
 
 ## 使用方法
 
