@@ -100,6 +100,8 @@ python scripts/apply_docx_layout.py input.docx output.docx --image-plan image-pl
 
 本项目随 skill 提供 `assets/仿宋_GB2312.TTF`，字体内部名称为 `FangSong_GB2312`，用于保证正文排版一致。方正小标宋等其他字体不随项目提供，请使用操作系统或单位已合法授权的字体。
 
+运行时若未检测到“方正小标宋简体”，skill 会提示用户安装或上传已合法授权的字体文件。用户暂时无法提供时，任务不会中止：skill 会保留原稿标题字体，或使用环境中最接近的合法字体完成排版，并在交付说明中注明替代情况。
+
 ## 目录结构
 
 ```text
